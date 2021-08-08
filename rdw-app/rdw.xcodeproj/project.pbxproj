@@ -1,0 +1,828 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4170D4E5A0CD443CE725063C /* Pods_rdw_rdwUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40FBFD0401825C258BC2F619 /* Pods_rdw_rdwUITests.framework */; };
+		5F8FFFB35DF3749AC1F57B25 /* Pods_rdw.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 643D17730B59F902FFF401E8 /* Pods_rdw.framework */; };
+		B988B0C4413B3804E5A57453 /* Pods_rdwTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9CFAB8B8DE79F39732949 /* Pods_rdwTests.framework */; };
+		E603812324D7E87B008781AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603812224D7E87B008781AD /* AppDelegate.swift */; };
+		E603812524D7E87B008781AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603812424D7E87B008781AD /* SceneDelegate.swift */; };
+		E603812824D7E87B008781AD /* rdw.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E603812624D7E87B008781AD /* rdw.xcdatamodeld */; };
+		E603812A24D7E87B008781AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603812924D7E87B008781AD /* ContentView.swift */; };
+		E603812C24D7E88F008781AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E603812B24D7E88E008781AD /* Assets.xcassets */; };
+		E603812F24D7E88F008781AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E603812E24D7E88F008781AD /* Preview Assets.xcassets */; };
+		E603813224D7E88F008781AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E603813024D7E88F008781AD /* LaunchScreen.storyboard */; };
+		E603813D24D7E890008781AD /* rdwTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603813C24D7E890008781AD /* rdwTests.swift */; };
+		E603814824D7E890008781AD /* rdwUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603814724D7E890008781AD /* rdwUITests.swift */; };
+		E611CBC5258D0A000013476A /* auto_structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E611CBC4258D09FF0013476A /* auto_structs.swift */; };
+		E65F30C424D85FD2009A538D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65F30C324D85FD2009A538D /* Coordinator.swift */; };
+		E6A1C6FE24E55A7A00F5848A /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1C6FD24E55A7A00F5848A /* SUImagePickerView.swift */; };
+		E6A1C70024E55AC100F5848A /* contentviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1C6FF24E55AC100F5848A /* contentviews.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E603813924D7E890008781AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E603811724D7E87A008781AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E603811E24D7E87A008781AD;
+			remoteInfo = rdw;
+		};
+		E603814424D7E890008781AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E603811724D7E87A008781AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E603811E24D7E87A008781AD;
+			remoteInfo = rdw;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0AC9CFAB8B8DE79F39732949 /* Pods_rdwTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rdwTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E62B8BB0A0A0EF9EFABF816 /* Pods-rdwTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdwTests.debug.xcconfig"; path = "Target Support Files/Pods-rdwTests/Pods-rdwTests.debug.xcconfig"; sourceTree = "<group>"; };
+		40FBFD0401825C258BC2F619 /* Pods_rdw_rdwUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rdw_rdwUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FAA9A2D57FD203CFBA847D7 /* Pods-rdw.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdw.debug.xcconfig"; path = "Target Support Files/Pods-rdw/Pods-rdw.debug.xcconfig"; sourceTree = "<group>"; };
+		643D17730B59F902FFF401E8 /* Pods_rdw.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rdw.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FB92A8631E9AA7369DB4859 /* Pods-rdwTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdwTests.release.xcconfig"; path = "Target Support Files/Pods-rdwTests/Pods-rdwTests.release.xcconfig"; sourceTree = "<group>"; };
+		B5E434C60E2BE7DBB431712F /* Pods-rdw-rdwUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdw-rdwUITests.debug.xcconfig"; path = "Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2D3A985698223172863C5AE /* Pods-rdw.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdw.release.xcconfig"; path = "Target Support Files/Pods-rdw/Pods-rdw.release.xcconfig"; sourceTree = "<group>"; };
+		E603811F24D7E87B008781AD /* rdw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rdw.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E603812224D7E87B008781AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E603812424D7E87B008781AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E603812724D7E87B008781AD /* rdw.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rdw.xcdatamodel; sourceTree = "<group>"; };
+		E603812924D7E87B008781AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E603812B24D7E88E008781AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E603812E24D7E88F008781AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E603813124D7E88F008781AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E603813324D7E88F008781AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E603813824D7E890008781AD /* rdwTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rdwTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E603813C24D7E890008781AD /* rdwTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rdwTests.swift; sourceTree = "<group>"; };
+		E603813E24D7E890008781AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E603814324D7E890008781AD /* rdwUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rdwUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E603814724D7E890008781AD /* rdwUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rdwUITests.swift; sourceTree = "<group>"; };
+		E603814924D7E890008781AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E611CBC4258D09FF0013476A /* auto_structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = auto_structs.swift; sourceTree = "<group>"; };
+		E65F30C324D85FD2009A538D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E6A1C6FD24E55A7A00F5848A /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
+		E6A1C6FF24E55AC100F5848A /* contentviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contentviews.swift; sourceTree = "<group>"; };
+		F538F744F90BF304DD6CF21E /* Pods-rdw-rdwUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rdw-rdwUITests.release.xcconfig"; path = "Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E603811C24D7E87A008781AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F8FFFB35DF3749AC1F57B25 /* Pods_rdw.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603813524D7E890008781AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B988B0C4413B3804E5A57453 /* Pods_rdwTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603814024D7E890008781AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4170D4E5A0CD443CE725063C /* Pods_rdw_rdwUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F4F6B0D629996A358EAD092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FAA9A2D57FD203CFBA847D7 /* Pods-rdw.debug.xcconfig */,
+				D2D3A985698223172863C5AE /* Pods-rdw.release.xcconfig */,
+				B5E434C60E2BE7DBB431712F /* Pods-rdw-rdwUITests.debug.xcconfig */,
+				F538F744F90BF304DD6CF21E /* Pods-rdw-rdwUITests.release.xcconfig */,
+				1E62B8BB0A0A0EF9EFABF816 /* Pods-rdwTests.debug.xcconfig */,
+				7FB92A8631E9AA7369DB4859 /* Pods-rdwTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8A90A4FBDF16C88CAF27FBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				643D17730B59F902FFF401E8 /* Pods_rdw.framework */,
+				40FBFD0401825C258BC2F619 /* Pods_rdw_rdwUITests.framework */,
+				0AC9CFAB8B8DE79F39732949 /* Pods_rdwTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E603811624D7E87A008781AD = {
+			isa = PBXGroup;
+			children = (
+				E603812124D7E87B008781AD /* rdw */,
+				E603813B24D7E890008781AD /* rdwTests */,
+				E603814624D7E890008781AD /* rdwUITests */,
+				E603812024D7E87B008781AD /* Products */,
+				8F4F6B0D629996A358EAD092 /* Pods */,
+				B8A90A4FBDF16C88CAF27FBB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E603812024D7E87B008781AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E603811F24D7E87B008781AD /* rdw.app */,
+				E603813824D7E890008781AD /* rdwTests.xctest */,
+				E603814324D7E890008781AD /* rdwUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E603812124D7E87B008781AD /* rdw */ = {
+			isa = PBXGroup;
+			children = (
+				E603812224D7E87B008781AD /* AppDelegate.swift */,
+				E603812424D7E87B008781AD /* SceneDelegate.swift */,
+				E603812924D7E87B008781AD /* ContentView.swift */,
+				E6A1C6FF24E55AC100F5848A /* contentviews.swift */,
+				E6A1C6FD24E55A7A00F5848A /* SUImagePickerView.swift */,
+				E65F30C324D85FD2009A538D /* Coordinator.swift */,
+				E611CBC4258D09FF0013476A /* auto_structs.swift */,
+				E603812B24D7E88E008781AD /* Assets.xcassets */,
+				E603813024D7E88F008781AD /* LaunchScreen.storyboard */,
+				E603813324D7E88F008781AD /* Info.plist */,
+				E603812624D7E87B008781AD /* rdw.xcdatamodeld */,
+				E603812D24D7E88F008781AD /* Preview Content */,
+			);
+			path = rdw;
+			sourceTree = "<group>";
+		};
+		E603812D24D7E88F008781AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E603812E24D7E88F008781AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E603813B24D7E890008781AD /* rdwTests */ = {
+			isa = PBXGroup;
+			children = (
+				E603813C24D7E890008781AD /* rdwTests.swift */,
+				E603813E24D7E890008781AD /* Info.plist */,
+			);
+			path = rdwTests;
+			sourceTree = "<group>";
+		};
+		E603814624D7E890008781AD /* rdwUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E603814724D7E890008781AD /* rdwUITests.swift */,
+				E603814924D7E890008781AD /* Info.plist */,
+			);
+			path = rdwUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E603811E24D7E87A008781AD /* rdw */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E603814C24D7E890008781AD /* Build configuration list for PBXNativeTarget "rdw" */;
+			buildPhases = (
+				32ED1F2DAFC679AE29885348 /* [CP] Check Pods Manifest.lock */,
+				E603811B24D7E87A008781AD /* Sources */,
+				E603811C24D7E87A008781AD /* Frameworks */,
+				E603811D24D7E87A008781AD /* Resources */,
+				B9780C9687864FC60C3EACD4 /* [CP] Embed Pods Frameworks */,
+				0E36C651A37940ECA6BEA31F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rdw;
+			packageProductDependencies = (
+			);
+			productName = rdw;
+			productReference = E603811F24D7E87B008781AD /* rdw.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E603813724D7E890008781AD /* rdwTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E603814F24D7E890008781AD /* Build configuration list for PBXNativeTarget "rdwTests" */;
+			buildPhases = (
+				0A3548E38DFE11360825524B /* [CP] Check Pods Manifest.lock */,
+				E603813424D7E890008781AD /* Sources */,
+				E603813524D7E890008781AD /* Frameworks */,
+				E603813624D7E890008781AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E603813A24D7E890008781AD /* PBXTargetDependency */,
+			);
+			name = rdwTests;
+			productName = rdwTests;
+			productReference = E603813824D7E890008781AD /* rdwTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E603814224D7E890008781AD /* rdwUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E603815224D7E890008781AD /* Build configuration list for PBXNativeTarget "rdwUITests" */;
+			buildPhases = (
+				D7678BC8A115AF0CB488037B /* [CP] Check Pods Manifest.lock */,
+				E603813F24D7E890008781AD /* Sources */,
+				E603814024D7E890008781AD /* Frameworks */,
+				E603814124D7E890008781AD /* Resources */,
+				64CC535775D3B730092FA4A9 /* [CP] Embed Pods Frameworks */,
+				868364C4728673B0F86D58B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E603814524D7E890008781AD /* PBXTargetDependency */,
+			);
+			name = rdwUITests;
+			productName = rdwUITests;
+			productReference = E603814324D7E890008781AD /* rdwUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E603811724D7E87A008781AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = "Olivier Wittop Koning";
+				TargetAttributes = {
+					E603811E24D7E87A008781AD = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					E603813724D7E890008781AD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E603811E24D7E87A008781AD;
+					};
+					E603814224D7E890008781AD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = E603811E24D7E87A008781AD;
+					};
+				};
+			};
+			buildConfigurationList = E603811A24D7E87A008781AD /* Build configuration list for PBXProject "rdw" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E603811624D7E87A008781AD;
+			packageReferences = (
+			);
+			productRefGroup = E603812024D7E87B008781AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E603811E24D7E87A008781AD /* rdw */,
+				E603813724D7E890008781AD /* rdwTests */,
+				E603814224D7E890008781AD /* rdwUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E603811D24D7E87A008781AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603813224D7E88F008781AD /* LaunchScreen.storyboard in Resources */,
+				E603812F24D7E88F008781AD /* Preview Assets.xcassets in Resources */,
+				E603812C24D7E88F008781AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603813624D7E890008781AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603814124D7E890008781AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A3548E38DFE11360825524B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rdwTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0E36C651A37940ECA6BEA31F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32ED1F2DAFC679AE29885348 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rdw-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64CC535775D3B730092FA4A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		868364C4728673B0F86D58B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rdw-rdwUITests/Pods-rdw-rdwUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9780C9687864FC60C3EACD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rdw/Pods-rdw-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7678BC8A115AF0CB488037B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rdw-rdwUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E603811B24D7E87A008781AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603812324D7E87B008781AD /* AppDelegate.swift in Sources */,
+				E603812824D7E87B008781AD /* rdw.xcdatamodeld in Sources */,
+				E6A1C6FE24E55A7A00F5848A /* SUImagePickerView.swift in Sources */,
+				E65F30C424D85FD2009A538D /* Coordinator.swift in Sources */,
+				E603812A24D7E87B008781AD /* ContentView.swift in Sources */,
+				E611CBC5258D0A000013476A /* auto_structs.swift in Sources */,
+				E6A1C70024E55AC100F5848A /* contentviews.swift in Sources */,
+				E603812524D7E87B008781AD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603813424D7E890008781AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603813D24D7E890008781AD /* rdwTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E603813F24D7E890008781AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E603814824D7E890008781AD /* rdwUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E603813A24D7E890008781AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E603811E24D7E87A008781AD /* rdw */;
+			targetProxy = E603813924D7E890008781AD /* PBXContainerItemProxy */;
+		};
+		E603814524D7E890008781AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E603811E24D7E87A008781AD /* rdw */;
+			targetProxy = E603814424D7E890008781AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E603813024D7E88F008781AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E603813124D7E88F008781AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E603814A24D7E890008781AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E603814B24D7E890008781AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E603814D24D7E890008781AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FAA9A2D57FD203CFBA847D7 /* Pods-rdw.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"rdw/Preview Content\"";
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = rdw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E603814E24D7E890008781AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D3A985698223172863C5AE /* Pods-rdw.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"rdw/Preview Content\"";
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = rdw/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdw;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E603815024D7E890008781AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E62B8BB0A0A0EF9EFABF816 /* Pods-rdwTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				INFOPLIST_FILE = rdwTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdwTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rdw.app/rdw";
+			};
+			name = Debug;
+		};
+		E603815124D7E890008781AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB92A8631E9AA7369DB4859 /* Pods-rdwTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				INFOPLIST_FILE = rdwTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdwTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rdw.app/rdw";
+			};
+			name = Release;
+		};
+		E603815324D7E890008781AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5E434C60E2BE7DBB431712F /* Pods-rdw-rdwUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				INFOPLIST_FILE = rdwUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdwUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rdw;
+			};
+			name = Debug;
+		};
+		E603815424D7E890008781AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F538F744F90BF304DD6CF21E /* Pods-rdw-rdwUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6CDWQZK7UX;
+				INFOPLIST_FILE = rdwUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.wittopkoning.rdwUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rdw;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E603811A24D7E87A008781AD /* Build configuration list for PBXProject "rdw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E603814A24D7E890008781AD /* Debug */,
+				E603814B24D7E890008781AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E603814C24D7E890008781AD /* Build configuration list for PBXNativeTarget "rdw" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E603814D24D7E890008781AD /* Debug */,
+				E603814E24D7E890008781AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E603814F24D7E890008781AD /* Build configuration list for PBXNativeTarget "rdwTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E603815024D7E890008781AD /* Debug */,
+				E603815124D7E890008781AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E603815224D7E890008781AD /* Build configuration list for PBXNativeTarget "rdwUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E603815324D7E890008781AD /* Debug */,
+				E603815424D7E890008781AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E603812624D7E87B008781AD /* rdw.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E603812724D7E87B008781AD /* rdw.xcdatamodel */,
+			);
+			currentVersion = E603812724D7E87B008781AD /* rdw.xcdatamodel */;
+			path = rdw.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E603811724D7E87A008781AD /* Project object */;
+}
