@@ -11,7 +11,7 @@ func isMatches(_ regex: String, _ string: String) -> Bool {
     return false
 }
 
-var ekns: [NSRegularExpression] = [NSRegularExpression("^[a-zA-Z]{2}-[\d]{2}-[\d]{2}$"), // 0 XX-99-99
+var kentekens_regs: [NSRegularExpression] = [NSRegularExpression("^[a-zA-Z]{2}-[\d]{2}-[\d]{2}$"), // 0 XX-99-99
 NSRegularExpression("^[\d]{2}-[\d]{2}-[a-zA-Z]{2}$"), // 1 99-99-XX
 NSRegularExpression("^[\d]{2}-[a-zA-Z]{2}-[\d]{2}$"), // 2 99-XX-99
 NSRegularExpression("^[a-zA-Z]{2}-[\d]{2}-[a-zA-Z]{2}$"), // 3 XX-99-XX
@@ -27,10 +27,10 @@ NSRegularExpression("^[\d]{1}-[a-zA-Z]{2}-[\d]{3}$"), // 12 9-XX-999
 NSRegularExpression("^[\d]{3}-[a-zA-Z]{2}-[\d]{1}$"), // 13 999-XX-9
 NSRegularExpression("^C\d[ABFJNST][0-9]{1,3}$",]
 
-var list_kentens: [String] = ["21-snz-2", "31-snz-2"]
+let kentekens = ["21-snz-2", "31-snz-2"]
 
-for kenteken in list_kentens {
-  for reg in ekns {
+for kenteken in kentekens {
+  for reg in kentekens_regs {
       print(reg)
       print(kenteken)
       //matchcd

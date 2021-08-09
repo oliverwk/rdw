@@ -1,4 +1,4 @@
-var JSSoup = require('jssoup').default;
+let JSSoup = require('jssoup').default;
 const fetch = require('node-fetch');
 fetch("https://ovi.rdw.nl/", {
     "headers": {
@@ -11,7 +11,7 @@ fetch("https://ovi.rdw.nl/", {
       "x-requested-with": "XMLHttpRequest",
       "cookie": "ASP.NET_SessionId=5ydd4o4zoluvvxkqkbrttsnv; rdw-persist=!lUEn6uvqFJgcszyW5/spYcFGPNu8GhS1pCDT7t3s+QWZyWuuiGFDeyytv+UgiJkNa7JuKIJjxV9q490SfscBGWdW0IChdrAH9LzEQJunjw==; f5avraaaaaaaaaaaaaaaa_session_=MNMPNBIBACEOOLACIOLPKHJKCBHGGELFLJBNMFJDMMPLHENOHIHBOGCEBFAGCOMAHAKDNMINFMBDLFENDAMANHFPMFEKCEGMEPPBEJEAFDMMHJHMKLKJCNNEDOKFMHMG; TS011f44e9=01a5d145de5b790e4442a85d6c4ef3c3b8bcc463b1a85cb2a079fa75bd7bede9686e368c14540b2dd926775b73560a425e1924bc5dc7c873b861c9e984b03ef4ef947a2b3e737fe36b607f2c0fd2b793a19ce9e6fa345620d096bd7335fb9404e2b01aa001; _ga=GA1.3.1567136690.1596611859; _gid=GA1.3.464048628.1596611859; _gat_UA-123561920-5=1"
     },
-    "body": "__VIEWSTATE=%2FwEPDwUKMTE1NDI3MDEyOQ9kFgJmD2QWAgIDD2QWAgIBD2QWAgIJDxYCHgdWaXNpYmxlaGRkbswJ9j6e1dGi3igmthIyvj8gc4WH7JTnjgF14yLn50Y%3D&__VIEWSTATEGENERATOR=CA0B0334&__EVENTVALIDATION=%2FwEdAAK8JKqL%2BRK4NWrMB2xu8rTB851Fq81QBiZgFEttEk2eeHewUOoCJ2ceZf9ZQoBBMXI2OTBKyEO6GXbPjhMnQTm0&ctl00%24TopContent%24txtKenteken=31-snz-2",
+    "body": `__VIEWSTATE=%2FwEPDwUKMTE1NDI3MDEyOQ9kFgJmD2QWAgIDD2QWAgIBD2QWAgIJDxYCHgdWaXNpYmxlaGRkbswJ9j6e1dGi3igmthIyvj8gc4WH7JTnjgF14yLn50Y%3D&__VIEWSTATEGENERATOR=CA0B0334&__EVENTVALIDATION=%2FwEdAAK8JKqL%2BRK4NWrMB2xu8rTB851Fq81QBiZgFEttEk2eeHewUOoCJ2ceZf9ZQoBBMXI2OTBKyEO6GXbPjhMnQTm0&ctl00%24TopContent%24txtKenteken=${process.env["KENTEKEN"]}`,
     "method": "POST",
     "mode": "cors"
   }).then(res => res.text().then(res => hadany(res)))
